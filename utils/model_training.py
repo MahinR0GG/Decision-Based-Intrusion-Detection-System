@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import lightgbm as lgb
 import xgboost as xgb
-import catboost as cbt
+# import catboost as cbt
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
@@ -55,7 +55,7 @@ def train_models(X_train, X_test, y_train, y_test, progress_callback=None):
     models = {
         "LightGBM": lgb.LGBMClassifier(boosting_type='gbdt', num_leaves=31, learning_rate=0.05, random_state=42),
         "XGBoost": xgb.XGBClassifier(objective="multi:softmax", eval_metric="mlogloss", use_label_encoder=False, random_state=42),
-        "CatBoost": cbt.CatBoostClassifier(verbose=0, depth=6, learning_rate=0.03, iterations=500, random_seed=42),
+        # "CatBoost": cbt.CatBoostClassifier(verbose=0, depth=6, learning_rate=0.03, iterations=500, random_seed=42),
         "KNN": KNeighborsClassifier(n_neighbors=5),
         "SVM": SVC(kernel='rbf', probability=True, class_weight='balanced', random_state=42)
     }
