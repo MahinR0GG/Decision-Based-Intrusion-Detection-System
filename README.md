@@ -1,5 +1,6 @@
 # 🚀 Intrusion Detection System using LCCDE  
 🔹 **Intrusion Detection System using LCCDE** is an advanced machine learning-based IDS that dynamically selects the best model for each attack type using the **Leading Classifier-based Confidence Decision Engine (LCCDE)**. 
+
 🔹 Instead of relying on a **single model**, LCCDE improves accuracy by selecting the **most suitable model** dynamically.  
 ---
 
@@ -12,7 +13,7 @@
 ✅ **Fully interactive UI** built with **Streamlit** for easy dataset upload, training, and visualization.  
 
 ---
-🔧 Technologies Used
+##🔧 **Technologies Used**
 🐍 Python
 📊 Streamlit (for UI)
 🧠 LightGBM, XGBoost, CatBoost, KNN, SVM (for ML models)
@@ -21,7 +22,7 @@
 📈 Seaborn & Matplotlib (for visualizations)
 
 ---
-📌 How It Works
+##📌 **How It Works**
 1️⃣ Data Preprocessing - Handles missing values & balances dataset using SMOTE.
 2️⃣ Feature Selection - Selects best features using ANOVA F-score.
 3️⃣ Model Training - Trains LightGBM, XGBoost, CatBoost, KNN, SVM and saves models.
